@@ -109,85 +109,85 @@ Client side:
 
 #### Get user
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/users/get/<username>`
+	`GET /api/dev/users/get/<username>`
 
-**Description**
+	**Description**
 
-`Get user's details`
+	`Get user's details`
 
 
 #### List all users
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/users/getall`
+	`GET /api/dev/users/getall`
 
-**Description**
+	**Description**
 
-`Retrieve list containing all the users in the system`
+	`Retrieve list containing all the users in the system`
 
 
 #### Register
 
-**Definition**
+	**Definition**
 
-`POST /api/dev/users/register`
+	`POST /api/dev/users/register`
 
-**Description**
+	**Description**
 
-`Add new user to the system`
+	`Add new user to the system`
 
-**body**
+	**body**
 
-{ username, picture, location }
+	{ username, picture, location }
 
 
 #### Validate user
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/users/validate/<username>`
+	`GET /api/dev/users/validate/<username>`
 
-**Description**
+	**Description**
 
-`Validate <username> exists in the system`
+	`Validate <username> exists in the system`
 
 
 #### Login
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/users/login/<username>`
+	`GET /api/dev/users/login/<username>`
 
-**Description**
+	**Description**
 
-`Log <username> into the system`
+	`Log <username> into the system`
 
 
 #### Logout
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/users/logout`
+	`GET /api/dev/users/logout`
 
-**Description**
+	**Description**
 
-`Log the current logged-in user out of the system`
+	`Log the current logged-in user out of the system`
 
 
 #### Edit user
 
-**Definition**
+	**Definition**
 
-`POST /api/dev/users/edit/<username>`
+	`POST /api/dev/users/edit/<username>`
 
-**Description**
+	**Description**
 
-`Edit <username>s details`
+	`Edit <username>s details`
 
-**body**
+	**body**
 
 { username, location }
 
@@ -196,30 +196,30 @@ Client side:
 ### Restaurants handeler endpoints:
 
 
-### Add Restaurant
+#### Add Restaurant
 
-**Definition**
+	**Definition**
 
-`POST /api/dev/rests/add`
+	`POST /api/dev/rests/add`
 
-**Description**
+	**Description**
 
-`Add new restaurant to the system`
+	`Add new restaurant to the system`
 
-**body**
+	**body**
 
-{ name, location }
+	{ name, location }
 
 
-#### List all restaurants
+##### List all restaurants
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/rests/getall`
+	`GET /api/dev/rests/getall`
 
-**Description**
+	**Description**
 
-`Retrieve list containing all the restaurants in the system`
+	`Retrieve list containing all the restaurants in the system`
 
 
 
@@ -228,51 +228,51 @@ Client side:
 
 #### Add review
 
-**Definition**
+	**Definition**
 
-`POST /api/dev/reviews/add`
+	`POST /api/dev/reviews/add`
 
-**Description**
+	**Description**
 
-`Add new review to the system`
+	`Add new review to the system`
 
-**body**
+	**body**
 
-{ reviewer, restaurant, pictures, rating }
+	{ reviewer, restaurant, pictures, rating }
 
 
 #### Get review
 
-**Definition**
+	**Definition**
 
-`GET /api/dev/reviews/get/<reviewId>`
+	`GET /api/dev/reviews/get/<reviewId>`
 
-**Description**
+	**Description**
 
-`Get reviews's details`
+	`Get reviews's details`
 
 
 #### Edit review
 
-**Definition**
+	**Definition**
 
-`POST /api/dev/reviews/edit/<reviewId>`
+	`POST /api/dev/reviews/edit/<reviewId>`
 
-**Description**
+	**Description**
 
-`Edit review with id <reviewId>`
+	`Edit review with id <reviewId>`
 
-**body**
+	**body**
 
-{ reviewer, restaurant, pictures, rating }
+	{ reviewer, restaurant, pictures, rating }
 
 
 #### Delete review
 
-**Definition**
+	**Definition**
 
-`DELETE /api/dev/reviews/delete/<reviewId>`
+	`DELETE /api/dev/reviews/delete/<reviewId>`
 
-**Description**
+	**Description**
 
-`delete reviews with id <reviewId>`
+	`delete reviews with id <reviewId>`
