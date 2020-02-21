@@ -46,6 +46,7 @@ Client side:
 ## Appendix A - mongoose scheme
 
 1. UsersModel:
+```json
   {
     _id: mongoose.Schema.Types.ObjectId,
     username: String,
@@ -59,8 +60,10 @@ Client side:
     },
     reviews: [{ type: Schema.Types.ObjectId, ref: "ReviewModel" }]
   }
+```
 
 2. RestaurantModel:
+```json
   {
     _id: Schema.Types.ObjectId,
     name: String,
@@ -70,8 +73,10 @@ Client side:
     },
     reviews: [{ type: Schema.Types.ObjectId, ref: "ReviewModel" }]
   }
+```
 
 3. ReviewModel:
+```json
   {
     _id: Schema.Types.ObjectId,
     reviewer: { type: Schema.Types.ObjectId, ref: "UsersModel" },
@@ -93,7 +98,7 @@ Client side:
       creationDate: Date
     }
   }
-
+```
 
 -------------------------
 
@@ -105,69 +110,85 @@ Client side:
 #### Get user
 
 **Definition**
+
 `GET /api/dev/users/get/<username>`
 
 **Description**
+
 `Get user's details`
 
 
 #### List all users
 
 **Definition**
+
 `GET /api/dev/users/getall`
 
 **Description**
+
 `Retrieve list containing all the users in the system`
 
 
 #### Register
 
 **Definition**
+
 `POST /api/dev/users/register`
 
 **Description**
+
 `Add new user to the system`
 
 **body**
+
 { username, picture, location }
 
 
 #### Validate user
 
 **Definition**
+
 `GET /api/dev/users/validate/<username>`
 
 **Description**
+
 `Validate <username> exists in the system`
 
 
 #### Login
 
 **Definition**
+
 `GET /api/dev/users/login/<username>`
 
 **Description**
+
 `Log <username> into the system`
 
 
 #### Logout
 
 **Definition**
+
 `GET /api/dev/users/logout`
 
 **Description**
+
 `Log the current logged-in user out of the system`
 
 
 #### Edit user
 
 **Definition**
+
 `POST /api/dev/users/edit/<username>`
 
 **Description**
+
 `Edit <username>s details`
 
 **body**
+
 { username, location }
 
 
@@ -178,21 +199,26 @@ Client side:
 ### Add Restaurant
 
 **Definition**
+
 `POST /api/dev/rests/add`
 
 **Description**
+
 `Add new restaurant to the system`
 
 **body**
+
 { name, location }
 
 
 #### List all restaurants
 
 **Definition**
+
 `GET /api/dev/rests/getall`
 
 **Description**
+
 `Retrieve list containing all the restaurants in the system`
 
 
@@ -203,40 +229,50 @@ Client side:
 #### Add review
 
 **Definition**
+
 `POST /api/dev/reviews/add`
 
 **Description**
+
 `Add new review to the system`
 
 **body**
+
 { reviewer, restaurant, pictures, rating }
 
 
 #### Get review
 
 **Definition**
+
 `GET /api/dev/reviews/get/<reviewId>`
 
 **Description**
+
 `Get reviews's details`
 
 
 #### Edit review
 
 **Definition**
+
 `POST /api/dev/reviews/edit/<reviewId>`
 
 **Description**
+
 `Edit review with id <reviewId>`
 
 **body**
+
 { reviewer, restaurant, pictures, rating }
 
 
 #### Delete review
 
 **Definition**
+
 `DELETE /api/dev/reviews/delete/<reviewId>`
 
 **Description**
+
 `delete reviews with id <reviewId>`
