@@ -8,9 +8,11 @@ Semester A, 2019-2020
 ```
 
 ## Assignment 3 - Full Stack Project
+```
 Published: 25.12.2019
 Due: 24.02.2020 23:59
 https://www.cs.bgu.ac.il/~majeek/atd/201/assignments/3/
+```
 
 In this assignment we will be implementing a full stack project in Javascript based on React frontend, and Express on top of Node in the backend using MongoDB and Mongoose for the model. You will be selecting a React UI framework to implement your website.
 
