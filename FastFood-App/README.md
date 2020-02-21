@@ -104,7 +104,8 @@ Client side:
 
 ## Appendix B - API
 
-### Users handeler endpoints:
+
+### Users handler endpoints:
 
 
 #### Get user
@@ -193,7 +194,8 @@ Client side:
 
 
 
-### Restaurants handeler endpoints:
+### Restaurants handler endpoints:
+
 
 
 #### Add Restaurant
@@ -223,7 +225,8 @@ Client side:
 
 
 
-### Reviews handeler endpoints:
+### Reviews handler endpoints:
+
 
 
 #### Add review
