@@ -2,8 +2,8 @@
 # Assignment 3 - MERN
 
 ### Written by
-Gad Elbaz -  204362248
-Ron Barsimantov -  203574082
+Gad Elbaz
+Ron Barsimantov
 
 
 ## General:
